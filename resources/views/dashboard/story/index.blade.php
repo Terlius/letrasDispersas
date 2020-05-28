@@ -7,7 +7,7 @@
  <div class="container">
   <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 font-italic">Letras Dispersas, un lugar para escribir historias.</h1>
+      <h1 class="display-6 font-italic">Letras Dispersas... un lugar para escribir historias.</h1>
       <p class="lead my-3">Comparte, lee y sé feliz.</p>
      
     </div>

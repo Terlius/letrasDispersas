@@ -7,6 +7,11 @@
   
       <div class="row">
         
+       
+
+
+
+
       @if(isset($stories))
         
         @foreach ($stories as $story)
@@ -43,9 +48,19 @@
               </div>
             </div>
         @endforeach
-      @endif 
-  
-  
+          
+       
+        @endif 
+            @if ( !isset($stories) )
+            <div class="container">
+              <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+                <div class="col-md-6 px-0">
+                  <h1 class="font-italic">No has publicado ninguna historia.</h1>
+                  <p class="lead my-3">Piensa en algo que te guste y escribe.</p>
+                 
+                </div>
+              </div>
+            @endif
   
     </div>
   </div>

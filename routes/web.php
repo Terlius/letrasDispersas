@@ -22,9 +22,9 @@ Route::get('/', function(){
 
 });
 
-Route::get('/miperfil/{user}' , 'StoryController@mostrarPerfil')->name('miperfil');
-Route::get('/perfil/{user}', 'StoryController@mostrarPerfil')->name('perfil'); 
-Route::get('/stories', 'StoryController@mostrarMyStories')->name('stories'); 
+
+Route::get('/perfil/{user}', 'UserController@mostrarPerfil')->name('perfil'); 
+Route::get('/stories', 'UserController@mostrarMyStories')->name('stories'); 
 
 
 Route::resource('story', 'StoryController');

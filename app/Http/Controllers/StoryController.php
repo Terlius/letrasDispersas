@@ -162,34 +162,7 @@ class StoryController extends Controller
         return back()->with('status','Historia eliminado con exito');
     }
 
-    public function mostrarMyStories(){
-
-
-        $user = User::find(Auth::user()->id);
-        $validador = false;
-        if($user->id == Auth::user()->id ){
-            $validador = true;
-        }
-
-
-
-        $stories = Story::where('user_id', $user->id)->cursor();
-       
-        
-        return view('dashboard.story.stories', ['user'=> $user, 'stories'=> $stories, 'validador'=> $validador]);
-    }
-
-    public function mostrarPerfil(User $user){
-        $validador = false;
-        if($user->id == Auth::user()->id ){
-            $validador = true;
-        }
-        
-        $stories = Story::where('user_id', $user->id)->cursor();
-       
-        
-        return view('dashboard.usuario.perfil', ['user'=> $user, 'stories'=> $stories, 'validador'=> $validador]);
-    }
+  
 
 
 }
